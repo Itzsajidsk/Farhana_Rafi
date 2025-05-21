@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhana & Rafi's Wedding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Farhana & Rafi</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#details">Details</a>
+                <a href="#rsvp">RSVP</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#registry">Registry</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Mohammad Rafi & Farhana Begam</h1>
+            <p>June 22, 2025 • Pagidyala, Kurnool</p>
+            <div class="countdown">
+                <div><span id="days"></span>Days</div>
+                <div><span id="hours"></span>Hours</div>
+                <div><span id="minutes"></span>Minutes</div>
+                <div><span id="seconds"></span>Seconds</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="our-story">
+        <div class="container">
+            <h2>Our Story</h2>
+            <div class="story-content">
+                <img src="images/couples.jpg" alt="Rafi and Farhana">
+                <div class="story-text">
+                    <p>Our journey began through the wisdom and guidance of our elders, who saw a perfect match in us. With their blessings, we embarked on this beautiful journey of togetherness.</p>
+                    <p>After thoughtful discussions and heartfelt moments shared between our families, we are excited to begin this new chapter of our lives as partners for life.</p>
+                    <p>We are thrilled to invite you to join us in celebrating our love and commitment to each other. We can't wait to share this special day with all of you!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Details -->
+    <section id="details" class="wedding-details">
+        <div class="container">
+            <h2>Wedding Details</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Date & Time</h3>
+                    <p>June 21, 2025</p>
+                    <p>Ceremony: 11:30 PM</p>
+                    <!-- <p>Reception: 6:00 PM</p> -->
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Palamarri</p>
+                    <p>Pagidyala</p>
+                    <p>Kurnool, AP 518412</p>
+                    <a href="#" class="map-link">View on Map</a>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Accommodations</h3>
+                    <p>Our only beloved Hpme</p>
+                    <!-- <p>Use code "SARAHMICHAEL" for 15% off</p>
+                    <p>Book by May 1, 2025</p> -->
+                </div>
+            </div>
+            <div class="schedule">
+                <h3>Wedding Schedule</h3>
+                <ul>
+                    <li><span>8:00 PM</span> - Guest Arrival</li>
+                    <li><span>9:30 PM</span> - Ceremony</li>
+                    <li><span>5:30 PM</span> - Cocktail Hour</li>
+                    <li><span>11:30 PM</span> - Reception</li>
+                    <li><span>12:00 PM</span> - Lunch</li>
+                    <li><span>8:00 PM</span> - Dancing</li>
+                    <li><span>11:00 PM</span> - Farewell</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="rsvp-section">
+        <div class="container">
+            <h2>RSVP</h2>
+            <p>Kindly respond by june 20, 2025</p>
+            <form id="rsvp-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Will you attend?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="attending" value="yes" checked> Accept with pleasure</label>
+                        <label><input type="radio" name="attending" value="no"> Decline with regret</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="meal">Meal Preference</label>
+                    <select id="meal">
+                        <option value="beef">Beef</option>
+                        <option value="chicken">Chicken</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Special Requests</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit RSVP</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/farhana 1.jpg" alt="Engagement photo 1">
+                <img src="images/farhana 2.jpg" alt="Engagement photo 2">
+                <img src="images/farhana 3.jpg" alt="Engagement photo 3">
+                <img src="images/couple.jpg" alt="Couple photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Registry -->
+<section id="registry" class="registry">
+    <div class="container">
+        <h2>Gift Registry</h2>
+        <p>Your presence at our wedding is the greatest gift of all. For those who wish to give a gift, we've registered at these stores:</p>
+        <div class="registry-links">
+            <a href="https://www.amazon.com/dp/B01FSPRME8?colid=1IJJPVBVTPSXS&coliid=I2Y7XWA9QSGSR1&ref_=wr_ov_pt&th=1" class="registry-link" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/81O91I48RlL._AC_SX679_.jpg" alt="Amazon Registry">
+                <span>Amazon</span>
+            </a>
+            <a href="https://www.amazon.com/gp/product/B0CQ3QL12W/ref=ewc_pr_img_1?smid=ATVPDKIKX0DER&th=1" class="registry-link" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/91DakkLNALL._AC_SX679_.jpg" alt="Amazon Registry">
+                <span>Amazon</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- FAQ -->
+    <!-- <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">What should I wear?</button>
+                <div class="faq-answer">
+                    <p>The dress code is semi-formal. For women, cocktail dresses or dressy separates. For men, suits or sport coats. The ceremony will be on grass, so please plan footwear accordingly.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Are kids welcome?</button>
+                <div class="faq-answer">
+                    <p>While we love your little ones, our wedding will be an adults-only event so everyone can relax and enjoy the evening.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Is there parking at the venue?</button>
+                <div class="faq-answer">
+                    <p>Yes, there is complimentary valet parking at the venue. We also recommend ride-sharing services like Uber or Lyft.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I bring a plus one?</button>
+                <div class="faq-answer">
+                    <p>Your invitation will specify if you have been allotted a plus one. If you have questions, please reach out to us.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: sajidsajju444@gmail.com</p>
+                    <p>Phone: 9573542781</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Share Your Photos</h3>
+                    <p>Use our wedding hashtag:</p>
+                    <p class="hashtag">#RafiFarhana2025</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Farhana & Rafi's Wedding. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
