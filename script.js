@@ -1,6 +1,6 @@
 // Countdown Timer
 function updateCountdown() {
-    const weddingDate = new Date('June 22, 2025 11:30:00').getTime();
+    const weddingDate = new Date('June 22, 2027 11:30:00').getTime();
     const now = new Date().getTime();
     const distance = weddingDate - now;
 
@@ -130,3 +130,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
